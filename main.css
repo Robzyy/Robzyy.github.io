@@ -1,0 +1,67 @@
+:root{
+    --bg0: #282828;
+    --gray8: #928374;
+    --red1: #cc241d;
+    --red9: #fb4934;
+    --green2: #98971a;
+    --green10: #b8bb26;
+    --yellow3: #d79921;
+    --yellow11: #fabd2f;
+    --blue4: #458588;
+    --blue12: #83a598;
+    --purple5: #b16286;
+    --purple13: #d3869b;
+    --aqua6: #689d6a;
+    --aqua14: #8ec07c;
+    --gray7: #a89984;
+    --fg15: #ebdbb2;
+    --bg0_h: #1d2021;
+    --bg0_s: #32302f;
+    --bg1: #3c3836;
+    --fg4: #a89984;
+    --bg2: #504945;
+    --fg3: #bdae93;
+    --bg3: #665c54;
+    --fg2: #d5c4a1;
+    --bg4: #7c6f64;
+    --fg0: #fbf1c7;
+    --fg1: var(--fg15);
+    /* not porting oranges, i don't even think they
+    are necessary */
+}
+
+body{
+    font-family: 'Fira Code', monospace;
+    background-color: var(--bg0);
+    color: var(--fg1);
+    margin: 10% 10% 0 10%;
+}
+
+.main-content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.sum-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+h1{
+    font-size: 20px;
+}
+
+span.name{
+    color: var(--blue4);
+}
+
+span.detail{
+    font-variant-ligatures: none;
+    color: var(--aqua6);
+}
+
+img{
+    object-fit: contain;
+}
