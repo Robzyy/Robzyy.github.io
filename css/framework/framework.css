@@ -8,7 +8,7 @@
     scroll-behavior: smooth;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 620px) {
     body {
         margin: 0 20%;
     }
@@ -225,8 +225,22 @@ nav a {
 .project-showcase-card-grid {
     display: grid;
     gap: 15px;
-    grid-template-columns: repeat(2, 1fr);
 }
+
+@media (min-width:320px) {
+    .project-showcase-card-grid {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
+
+@media (min-width:1025px) {
+    .project-showcase-card-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
 
 .project-showcase-card {
     background-color: var(--md-sys-color-secondary-container-light);
@@ -236,11 +250,9 @@ nav a {
     text-decoration: none;
     transition: background-color 0.3s;
 
-
     &:hover {
         background-color: var(--md-ref-palette-secondary80);
     }
-
 
     & img {
         width: 100%;
@@ -257,5 +269,53 @@ nav a {
     & p,
     h2 {
         margin: 16px 0;
+    }
+}
+
+
+.socials-button-wrapper{
+    display: grid;
+    gap: 10px;
+}
+
+@media (min-width:930px) {
+    .socials-button-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+@media (min-width:1246px) {
+    .socials-button-wrapper{
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+}
+
+.socials-button {
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--md-sys-color-on-secondary-container-light);
+    background-color: var(--md-sys-color-secondary-container-light);
+    flex: auto;
+    padding: 1em;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+
+    &:is(a):hover {
+        background-color: var(--md-ref-palette-secondary80);
+    }
+
+    & a {
+        text-decoration: inherit;
+        color: inherit;
+
+    }
+
+    & [class^="fa"]::before {
+        padding-right: 10px;
+        font-size: 1.2em;
     }
 }
