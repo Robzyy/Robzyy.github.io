@@ -8,22 +8,22 @@
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: var(--md-sys-color-surface-light);
+}
+
 @media (min-width: 620px) {
     body {
         margin: 0 20%;
     }
 }
 
-body {
-    background-color: var(--md-sys-color-surface-light);
-}
-
 .navbar-wrapper {
-    width: 100.009%;
+    width: 100%;
     /* width: 100% leaves a slight trail at the end */
     /* Might be a bug on Chrome's rendering engine */
 
-    height: 70px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: end;
@@ -33,18 +33,18 @@ body {
     z-index: 1;
     background-color: var(--md-sys-color-surface-light);
     /* background-color: brown; */
-    border-radius: 0 0 30px 30px;
+    border-radius: 0 0 35px 35px;
 }
 
 .navbar {
     width: 100%;
-    height: 60px;
+    height: 70px;
     background-color: var(--md-sys-color-secondary-container-light);
     color: var(--md-sys-color-on-secondary-container-light);
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 30px;
+    border-radius: 100px;
 
 }
 
@@ -57,7 +57,7 @@ nav {
 
 .nav-item {
     margin: 5px;
-    border-radius: 30px;
+    border-radius: 100px;
     width: inherit;
     display: flex;
     justify-content: center;
@@ -89,7 +89,7 @@ nav a {
     display: flex;
     justify-content: center;
     min-height: 300px;
-    max-height: 600px;
+    max-height: 400px;
     width: 100%;
     contain: paint;
 
@@ -278,14 +278,14 @@ nav a {
     gap: 10px;
 }
 
-@media (min-width:930px) {
+@media (min-width:730px) {
     .socials-button-wrapper{
         grid-template-columns: repeat(2, 1fr);
 
     }
 }
 
-@media (min-width:1246px) {
+@media (min-width:1025px) {
     .socials-button-wrapper{
         grid-template-columns: repeat(4, 1fr);
 
@@ -299,8 +299,9 @@ nav a {
     background-color: var(--md-sys-color-secondary-container-light);
     flex: auto;
     padding: 1em;
-    border-radius: 18px;
+    border-radius: 100px;
     display: flex;
+    justify-content: center ;
     align-items: center;
     transition: background-color 0.3s;
 
@@ -311,7 +312,6 @@ nav a {
     & a {
         text-decoration: inherit;
         color: inherit;
-
     }
 
     & [class^="fa"]::before {
