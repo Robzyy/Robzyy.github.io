@@ -1,0 +1,142 @@
+/* M3 palette */
+.m3-color-palette-wrapper
+{
+    margin: 50px 0;
+    width: 100%;
+}
+
+.m3-color-palette {
+    border-radius: 20px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+
+    &>* {
+        height: 100px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+.primary {
+    background-color: var(--md-sys-color-primary-light);
+    color: var(--md-sys-color-on-primary-light);
+
+}
+
+.on-primary {
+    background-color: var(--md-sys-color-on-primary-light);
+    color: var(--md-sys-color-primary-light);
+
+}
+
+.primary-container {
+    background-color: var(--md-sys-color-primary-container-light);
+    color: var(--md-sys-color-on-primary-container-light);
+
+}
+
+.on-primary-container {
+    background-color: var(--md-sys-color-on-primary-container-light);
+    color: var(--md-sys-color-primary-container-light);
+}
+
+.secondary {
+    background-color: var(--md-sys-color-secondary-light);
+    color: var(--md-sys-color-on-secondary-light);
+}
+
+.on-secondary {
+    background-color: var(--md-sys-color-on-secondary-light);
+    color: var(--md-sys-color-secondary-light);
+}
+
+.secondary-container {
+    background-color: var(--md-sys-color-secondary-container-light);
+    color: var(--md-sys-color-on-secondary-container-light);
+}
+
+.on-secondary-container {
+    background-color: var(--md-sys-color-on-secondary-container-light);
+    color: var(--md-sys-color-secondary-container-light);
+}
+
+.tertiary {
+    background-color: var(--md-sys-color-tertiary-light);
+    color: var(--md-sys-color-on-tertiary-light);
+}
+
+.on-tertiary {
+    background-color: var(--md-sys-color-on-tertiary-light);
+    color: var(--md-sys-color-tertiary-light);
+}
+
+.tertiary-container {
+    background-color: var(--md-sys-color-tertiary-container-light);
+    color: var(--md-sys-color-on-tertiary-container-light);
+}
+
+.on-tertiary-container {
+    background-color: var(--md-sys-color-on-tertiary-container-light);
+    color: var(--md-sys-color-tertiary-container-light);
+}
+
+.error {
+    background-color: var(--md-sys-color-error-light);
+    color: var(--md-sys-color-on-error-light);
+}
+
+.on-error {
+    background-color: var(--md-sys-color-on-error-light);
+    color: var(--md-sys-color-error-light);
+}
+
+.error-container {
+    background-color: var(--md-sys-color-error-container-light);
+    color: var(--md-sys-color-on-error-container-light);
+}
+
+.on-error-container {
+    background-color: var(--md-sys-color-on-error-container-light);
+    color: var(--md-sys-color-error-container-light);
+}
+
+.background {
+    background-color: var(--md-sys-color-background-light);
+    color: var(--md-sys-color-on-background-light);
+}
+
+.on-background {
+    background-color: var(--md-sys-color-on-background-light);
+    color: var(--md-sys-color-background-light);
+}
+
+.surface {
+    background-color: var(--md-sys-color-surface-light);
+    color: var(--md-sys-color-on-surface-light);
+}
+
+.on-surface {
+    background-color: var(--md-sys-color-on-surface-light);
+    color: var(--md-sys-color-surface-light);
+}
+
+.surface-variant {
+    background-color: var(--md-sys-color-surface-variant-light);
+    color: var(--md-sys-color-on-surface-variant-light);
+}
+
+.on-surface-variant {
+    background-color: var(--md-sys-color-on-surface-variant-light);
+    color: var(--md-sys-color-surface-variant-light);
+}
+
+.outline{
+    background-color: var(--md-sys-color-outline-light);
+    color: var(--md-sys-color-on-primary-light);
+}
