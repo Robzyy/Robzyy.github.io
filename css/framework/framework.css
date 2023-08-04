@@ -20,14 +20,10 @@ body {
 
 .navbar-wrapper {
     width: 100%;
-    /* width: 100% leaves a slight trail at the end */
-    /* Might be a bug on Chrome's rendering engine */
-
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: end;
-    margin: 30px 0;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -44,7 +40,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 100px;
+    border-radius: 18px;
 
 }
 
@@ -57,7 +53,7 @@ nav {
 
 .nav-item {
     margin: 5px;
-    border-radius: 100px;
+    border-radius: 18px;
     width: inherit;
     display: flex;
     justify-content: center;
@@ -71,6 +67,11 @@ nav {
     &:hover {
         background-color: var(--md-ref-palette-secondary70);
     }
+}
+
+.nav-item-menu {
+    width: fit-content;
+    padding: 0 20px;
 }
 
 nav a {
@@ -90,13 +91,14 @@ nav a {
     justify-content: center;
     min-height: 300px;
     max-height: 400px;
+    margin-top: 10px;
     width: 100%;
     contain: paint;
 
     & .hero-img {
         object-fit: cover;
         width: inherit;
-        border-radius: 32px;
+        border-radius: 18px;
         filter: brightness(50%);
     }
 
@@ -160,6 +162,10 @@ nav a {
 
 .main-content-section {
     margin: 40px 0;
+
+    &.centered {
+        text-align: center;
+    }
 }
 
 .content-section-header {
@@ -168,7 +174,7 @@ nav a {
 
 .content-section-text:is(form) {
     /* background-color: var(--md-sys-color-secondary-container-light); */
-    padding: 40px 100px;
+    padding: 20px 100px;
     border-radius: 32px;
     display: flex;
     align-items: center;
@@ -273,21 +279,21 @@ nav a {
 }
 
 
-.socials-button-wrapper{
+.socials-button-wrapper {
     display: grid;
     gap: 10px;
 }
 
 @media (min-width:730px) {
-    .socials-button-wrapper{
+    .socials-button-wrapper {
         grid-template-columns: repeat(2, 1fr);
 
     }
 }
 
 @media (min-width:1025px) {
-    .socials-button-wrapper{
-        grid-template-columns: repeat(4, 1fr);
+    .socials-button-wrapper {
+        grid-template-columns: repeat(3, 1fr);
 
     }
 }
@@ -298,10 +304,10 @@ nav a {
     color: var(--md-sys-color-on-secondary-container-light);
     background-color: var(--md-sys-color-secondary-container-light);
     flex: auto;
-    padding: 1em;
-    border-radius: 100px;
+    height: 70px;
+    border-radius: 18px;
     display: flex;
-    justify-content: center ;
+    justify-content: center;
     align-items: center;
     transition: background-color 0.3s;
 
