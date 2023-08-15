@@ -24,81 +24,85 @@
 </head>
 
 <body>
-    <div class="hero-banner">
-        <img class="hero-img" src="https://source.unsplash.com/cVJsVGkxCoo.png" alt="hero-img">
-        <div class="hero-info-wrapper">
-            <!-- <img src="assets/me_sqaure.jpg" alt="avatar" class="avatar"> -->
-            <h1 class="hero-text">Contact</h1>
-            <h2 class="hero-subtext">Want to collaborate? Or maybe just some chit chat?</h2>
+    <div class="document-wrapper">
+        <div class="hero-banner">
+            <img class="hero-img" id="hero-img" src="https://source.unsplash.com/cVJsVGkxCoo.png" alt="hero-img">
+            <div class="hero-info-wrapper">
+                <!-- <img src="assets/me_sqaure.jpg" alt="avatar" class="avatar"> -->
+                <h1 class="hero-text">Contact</h1>
+                <h2 class="hero-subtext">Want to collaborate? Or maybe just some chit chat?</h2>
+            </div>
+            <div class="hero-img-info">
+                <span class="material-symbols-outlined">
+                    info
+                </span>
+                <p>Image from
+                    <a href="https://unsplash.com/photos/cVJsVGkxCoo" target="_blank">
+                        Unsplash
+                    </a>
+                </p>
+            </div>
         </div>
-        <div class="hero-img-info">
-            <span class="material-symbols-outlined">
-                info
-            </span>
-            <p>Image from
-                <a href="https://unsplash.com/photos/cVJsVGkxCoo" target="_blank">
-                    Unsplash
-                </a>
-            </p>
-        </div>
-    </div>
 
-    <div class="navbar-wrapper">
-        <div class="navbar">
-            <nav>
-                <a class="nav-item" href="index.html">
-                    <!-- <span class="material-symbols-outlined">
+        <div class="navbar-wrapper">
+            <div class="navbar">
+                <nav>
+                    <a class="nav-item" href="index.html">
+                        <!-- <span class="material-symbols-outlined">
                         home
                     </span> -->
-                    Home
-                </a>
-                <a class="nav-item" href="links.html">
-                    <!-- <span class="material-symbols-outlined">
+                        Home
+                    </a>
+                    <a class="nav-item" href="links.html">
+                        <!-- <span class="material-symbols-outlined">
                         link
                     </span> -->
-                    Links
-                </a>
-                <a class="nav-item" href="about.html">
-                    <!-- <span class="material-symbols-outlined">
+                        Links
+                    </a>
+                    <a class="nav-item" href="about.html">
+                        <!-- <span class="material-symbols-outlined">
                         info
                     </span> -->
-                    About
-                </a>
-                <a class="nav-item active" href="contact.html">
-                    <!-- <span class="material-symbols-outlined">
+                        About
+                    </a>
+                    <a class="nav-item active" href="contact.html">
+                        <!-- <span class="material-symbols-outlined">
                         contact_support
                     </span> -->
-                    Contact
-                </a>
+                        Contact
+                    </a>
 
-                <p class="nav-item nav-item-menu">
-                    <span class="material-symbols-outlined">
-                        more_vert
-                    </span>
+                    <p class="nav-item nav-item-menu">
+                        <span class="material-symbols-outlined">
+                            more_vert
+                        </span>
+                    </p>
+                </nav>
+            </div>
+        </div>
+
+
+        <div class="main-content">
+            <div class="main-content-section">
+                <form class="content-section-text" action="/my-handling-form-page" method="post">
+                    <input type="text" id="name" name="user_name" required placeholder="Name *" />
+                    <input type="email" id="mail" name="user_email" required placeholder="Email *" />
+                    <textarea id="msg" name="user_message" required placeholder="Message *"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+
+            <div class="main-content-section centered">
+                <p class="content-section-text">
+                    If the contact form is not working, you can also email me over at
+                    <strong>cclipicioiu@gmail.com</strong>
                 </p>
-            </nav>
+            </div>
         </div>
+        <script src="https://kit.fontawesome.com/bbe82e5ae7.js" crossorigin="anonymous"></script>
+        <script src="js/script1.js"></script>
+        <script src="js/colorization.js" defer></script>
     </div>
-
-
-    <div class="main-content">
-        <div class="main-content-section">
-            <form class="content-section-text" action="/my-handling-form-page" method="post">
-                <input type="text" id="name" name="user_name" required placeholder="Name *" />
-                <input type="email" id="mail" name="user_email" required placeholder="Email *" />
-                <textarea id="msg" name="user_message" required placeholder="Message *"></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-
-        <div class="main-content-section centered">
-            <p class="content-section-text">
-                If the contact form is not working, you can also email me over at
-                <strong>cclipicioiu@gmail.com</strong>
-            </p>
-        </div>
-    </div>
-    <script src="https://kit.fontawesome.com/bbe82e5ae7.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

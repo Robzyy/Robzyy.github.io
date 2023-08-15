@@ -1,4 +1,4 @@
-@import url(../color-tokens.css);
+/* @import url(../color-tokens.css); */
 
 :root {
     font-family: 'Inter', sans-serif;
@@ -10,13 +10,19 @@
 
 body {
     background-color: var(--md-sys-color-surface-light);
+    display: flex;
+    justify-content: center;
 }
 
-@media (min-width: 620px) {
+.document-wrapper{
+    width: max(65%, 700px);
+}
+
+/* @media (min-width: 620px) {
     body {
         margin: 0 20%;
     }
-}
+} */
 
 .navbar-wrapper {
     width: 100%;
@@ -72,7 +78,9 @@ nav {
 .nav-item-menu {
     width: fit-content;
     padding: 0 20px;
+    cursor: default;
 }
+
 
 nav a {
     text-decoration: none;
@@ -240,7 +248,7 @@ nav a {
     }
 }
 
-@media (min-width:1025px) {
+@media (min-width:600px) {
     .project-showcase-card-grid {
         grid-template-columns: repeat(2, 1fr);
 
@@ -281,14 +289,8 @@ nav a {
 
 .socials-button-wrapper {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-}
-
-@media (min-width:730px) {
-    .socials-button-wrapper {
-        grid-template-columns: repeat(2, 1fr);
-
-    }
 }
 
 @media (min-width:1025px) {
@@ -301,12 +303,15 @@ nav a {
 .socials-button {
     font-size: 18px;
     text-decoration: none;
+    border: 5px solid var(--md-sys-color-secondary-container-light);
     color: var(--md-sys-color-on-secondary-container-light);
     background-color: var(--md-sys-color-secondary-container-light);
-    flex: auto;
-    height: 70px;
+    height: 50px;
     border-radius: 18px;
     display: flex;
+    position: relative;
+    display: flex;
+    flex: auto;
     justify-content: center;
     align-items: center;
     transition: background-color 0.3s;
@@ -316,8 +321,10 @@ nav a {
     }
 
     & a {
+        position: absolute;
         text-decoration: inherit;
         color: inherit;
+        /* border-radius: inherit; */
     }
 
     & [class^="fa"]::before {
@@ -325,3 +332,4 @@ nav a {
         font-size: 1.2em;
     }
 }
+
