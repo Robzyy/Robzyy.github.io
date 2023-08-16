@@ -306,7 +306,7 @@ nav a {
     border: 5px solid var(--md-sys-color-secondary-container-light);
     color: var(--md-sys-color-on-secondary-container-light);
     background-color: var(--md-sys-color-secondary-container-light);
-    height: 50px;
+    height: 60px;
     border-radius: 18px;
     display: flex;
     position: relative;
